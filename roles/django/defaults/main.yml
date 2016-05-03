@@ -1,0 +1,3 @@
+django_home: /home/ubuntu/marvel-explorer
+rds_db_instance: _________
+repo_url: git@github.com:marvel-explorer/marvel-explorer.git
