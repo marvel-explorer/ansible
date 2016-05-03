@@ -6,8 +6,8 @@
 
 - name: Create gunicorn Upstart Job
   sudo: yes
-  template: src=marvelexplorer.conf.j2 dest=/etc/init/marvelexplorer.conf
+  template: src=m_explorer.conf.j2 dest=/etc/init/m_explorer.conf
 
 - name: Start gunicorn Upstart Job
   sudo: yes
-  service: name=marvelexplorer state=restarted
+  service: name=m_explorer state=restarted

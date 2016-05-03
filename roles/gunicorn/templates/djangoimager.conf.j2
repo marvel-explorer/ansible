@@ -10,9 +10,4 @@ chdir {{ django_home }}/m_explorer/
 env DJANGO_SETTINGS_MODULE=m_explorer.settings
 env SECRET_KEY={{ secret_key }}
 env DATABASE_URL={{ db_url }}
-env EMAIL_HOST={{ email_host }}
-env EMAIL_PORT={{ email_port }}
-env EMAIL_USE_TLS={{ email_use_tls }}
-env EMAIL_HOST_USER={{ email_host_user }}
-env EMAIL_HOST_PASSWORD={{ email_host_password }}
 exec gunicorn -b 127.0.0.1:8000 -w 4 m_explorer.wsgi --error-logfile /tmp/gunicorn-error.log
