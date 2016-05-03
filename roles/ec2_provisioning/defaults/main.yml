@@ -1,10 +1,10 @@
 keypair: pas
 security_group: ssh-access
 instance_type: t2.micro
-ami:
-vpc_subnet_id:
+ami: ami-9abea4fb
+vpc_subnet_id: subnet-4dfa053b
 region: us-west-2
-instance_tags: {"Name": "ansible-built"}
+instance_tags: {"Name": "marvel-explorer"}
 root_ebs_size: 8
 zone: us-west-2a
 instance_profile_name: paulsheridan

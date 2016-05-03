@@ -39,6 +39,6 @@
     DATABASE_URL: "{{ db_url }}"
     SECRET_KEY: secret_key
   django_manage:
-    app_path: "{{ django_home }}/imagersite"
-    settings: imagersite.production
+    app_path: "{{ django_home }}/m_explorer"
+    settings: m_explorer.settings
     command: migrate
