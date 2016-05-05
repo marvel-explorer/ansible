@@ -42,3 +42,12 @@
     app_path: "{{ django_home }}/m_explorer"
     settings: m_explorer.settings
     command: migrate
+
+- name: Copy Character DB
+  environment:
+    DATABASE_URL: "{{ db_url }}"
+    SECRET_KEY: secret_key
+  django_manage:
+    app_path: "{{ django_home }}/m_explorer"
+    settings: m_explorer.settings
+    command: cleaning
